@@ -1,0 +1,102 @@
+page {
+  background-color: #f0f4fa;
+}
+.content {
+  padding: 24rpx 24rpx;
+}
+.content .content_item {
+  background-color: #fff;
+  border-radius: 16rpx;
+  margin-bottom: 36rpx;
+}
+.content .content_item .item_content {
+  padding: 20rpx 20rpx 0 20rpx;
+}
+.content .content_item .item_content .item_image {
+  border: 2rpx solid #f5f5fa;
+  border-radius: 10rpx;
+}
+.content .content_item .item_content .item_image image {
+  border-radius: 10rpx;
+}
+.content .content_item .item_content .item_image .item_text {
+  font-size: 26rpx;
+  padding: 20rpx 20rpx 0 20rpx;
+  color: #323233;
+}
+.content .content_item .item_content .item_image .text_from {
+  font-size: 26rpx;
+  margin-top: 10rpx;
+  padding: 0 20rpx 20rpx 20rpx;
+  color: #323233;
+  display: flex;
+  justify-content: flex-end;
+}
+.content .content_item .item_content .item_label {
+  font-size: 18rpx;
+  padding: 20rpx 0 24rpx 0;
+}
+.content .content_item .item_content .item_label .label {
+  display: inline-block;
+  background-color: #f0f4fa;
+  margin-right: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0 16rpx;
+  border-radius: 8rpx;
+  color: #7490ba;
+}
+.content .content_item .item_bottom {
+  padding: 16rpx 0 16rpx 64rpx;
+  border-top: 1rpx solid rgba(0, 0, 0, 0.1);
+}
+.content .content_item .item_bottom .item_tools {
+  display: flex;
+}
+.content .content_item .item_bottom .item_tools .tool {
+  font-size: 22rpx;
+  color: #949499;
+  margin-right: 78rpx;
+  height: 40rpx;
+  display: flex;
+}
+.content .content_item .item_bottom .item_tools .tool image {
+  height: 40rpx;
+  width: 40rpx;
+  margin-right: 10rpx;
+}
+.content .content_item .item_bottom .item_tools .tool .tool_text {
+  line-height: 40rpx;
+}
+.content .content_item .item_bottom .item_tools .tool .collected {
+  color: #dbe5f3;
+}
+.return_top {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  position: fixed;
+  opacity: 40%;
+  bottom: 148rpx;
+  right: 44rpx;
+}
+.share {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 268rpx;
+  right: 44rpx;
+  opacity: 0.4;
+}
+.share button {
+  width: 80rpx !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 80rpx;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 268rpx;
+  right: 44rpx;
+  opacity: 0;
+}

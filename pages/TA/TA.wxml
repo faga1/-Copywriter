@@ -1,0 +1,44 @@
+<view class="container" bindtap="CancleAllMask">
+    <view class="TA_content">
+        <view class="TA_item" bindtap="EnterTA" wx:for="{{user_list}}" wx:key="uid" data-index="{{index}}">
+            <view class="{{item.ismask?'mask':''}}" catchtap="CancleMask" data-index="{{index}}">
+            </view>
+            <view class="tool_detail {{item.ismask?'':'hide'}}">
+                <view class="set_top" catchtap="set_top" data-index="{{index}}">
+                    <image src="../../icons/card_icon_dropmenu_pin_default@2x.png" mode="widthFix"/>
+                    <text>置顶</text>
+                </view>
+                <view class="share" catchtap="share" data-index="{{index}}">
+                    <image src="../../icons/card_icon_dropmenu_share_default@2x.png" mode="widthFix"/>
+                    <text>分享</text>
+                    <button open-type="share" plain data-index="{{index}}"></button>
+                </view>
+                <view class="delete" catchtap="delete" data-index="{{index}}">
+                    <image src="../../icons/card_icon_dropmenu_delete_default@2x.png" mode="widthFix"/>
+                    <text>删除</text>
+                </view>
+            </view>
+            <view class="TA_top">
+                <view class="userInfo {{item.ismask?'blur':''}}">
+                    <view class="user_left">
+                        <image src="{{item.avatar}}" mode="widthFix"/>
+                    </view>
+                    <view class="user_right">
+                        <view class="username">
+                            {{item.username}}
+                        </view>
+                        <view class="lasttime">
+                            最后一次更新于 {{item.time}}
+                        </view>
+                    </view>
+                </view>
+                <view class="TA_tool" catchtap="handleTool" data-index="{{index}}">
+                    <image src="../../icons/content_icon_more_more@2x.png" mode="widthFix"/>
+                </view>
+            </view>
+            <view class="paperimg {{item.ismask?'blur':''}}">
+                <image src="{{item1}}" wx:for='{{item.picArr}}' wx:for-item="item1" wx:for-index="index1" wx:key='*this' class="{{index1===2?'':'img_left'}}"/>
+            </view>
+        </view>
+    </view>
+</view>

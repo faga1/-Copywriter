@@ -1,0 +1,114 @@
+.container{
+    background-color: #f5f5fa;
+    height: 100vh;
+    width: 100vw;
+    padding: 24rpx;
+    z-index: 0;
+    position: fixed;
+}
+.TA_content{
+    .TA_item{
+        .mask{
+            background-color: rgba(0,0,0,0.3);
+            width: 702rpx;
+            height: 360rpx;
+            position: absolute;
+            left: 0;
+            top:0;
+            z-index: 99;
+        }
+        position: relative;
+        border-radius: 10rpx;
+        background-color: #fff;
+        width: 702rpx;
+        height: 360rpx;
+        margin-bottom: 30rpx;
+        .tool_detail{
+            border-radius: 10rpx;
+            background-color: #fff;
+            z-index: 100;
+            position: absolute;
+            top:40rpx;
+            width: 300rpx;
+            height: 300rpx;
+            right: 50rpx;
+            image{
+                width: 50rpx;
+                height: 50rpx;
+                margin-right: 30rpx;
+                margin-left: 20rpx;
+                vertical-align: middle;
+            }
+            text{
+                font-size: 30rpx;
+                color:#323233;
+                line-height: 100rpx;
+            }
+            view{
+                height: 100rpx;
+            }
+            button{
+                border: 1px solid black;
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                top:100rpx;
+                width: 300rpx;
+                height: 100rpx;
+            }
+        }
+        .TA_top{
+            position: relative;
+            display: flex;
+            .userInfo{
+                display: flex;
+                .user_left{
+                    width: 100rpx;
+                    height: 100rpx;
+                    margin:20rpx 20rpx 20rpx 30rpx;
+                    image{
+                        border-radius: 50rpx;
+                    }
+                }
+                .user_right{
+                    margin-top: 44rpx;
+                    .user_name{
+                        color: #323233;
+                        font-size: 28rpx;
+                    }
+                    .lasttime{
+                        color: #949499;
+                        font-size: 22rpx;
+                    }
+                }
+            }
+            .TA_tool{
+                position: absolute;
+                right: 20rpx;
+                top:40rpx;
+                width: 30rpx;
+                height: 30rpx;
+            }
+        }
+        .paperimg{
+            display: flex;
+            padding:0 20rpx;
+            position: relative;
+            z-index:10;
+            image{
+                border-radius: 10rpx;
+                width: 200rpx;
+                height: 200rpx;
+            }
+            .img_left{
+                margin-right: 31rpx;
+            }
+        }
+    }
+}
+.hide{
+    display: none;
+}
+.blur{
+    filter: blur(4rpx);
+}

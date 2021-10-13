@@ -1,0 +1,2 @@
+<textarea placeholder="要说点什么吗(" cols="30" rows="10" bindinput='storeMsg' placeholder-class="place-holder" value='{{msg}}' ></textarea>
+<image src="../../icons/feedback_btn_submit_default@2x.png" mode="widthFix" bindtap='submit_msg' />

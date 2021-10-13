@@ -1,0 +1,62 @@
+page{
+    background-color: #f5f5fa;
+}
+.user_info_wrap{
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    .background{
+        filter: blur(18rpx);
+        margin:-18rpx;
+        width: 768rpx;
+    }
+    .user_info{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        image{
+            height: 170rpx;
+            width: 170rpx;
+            border-radius: 50%;
+        }
+        .user_name{
+            margin-top: 40rpx;
+            background-color:rgba(0,0,0,0.2);
+            font-size:24rpx;
+            color: #fff;
+            height: 50rpx;
+            border-radius: 10rpx;
+            line-height: 50rpx;
+
+        }
+    }
+}
+.mine_content{
+    margin-top: 20rpx;
+    .mine_item{
+        position: relative;
+        background-color: #fff;
+        width: 100%;
+        border-bottom: 2rpx solid #ccc;
+        line-height: 50rpx;
+        display: flex;
+        padding:30rpx 0;
+        image{
+            width: 50rpx;
+            height: 50rpx;
+            margin-left:44rpx;
+            margin-right: 30rpx;
+        }
+        .content_text{
+            font-size: 32rpx;
+            color: rgb(50,50,51);
+        }
+        navigator{
+           position:absolute;
+           right:-6rpx;
+        }
+    }
+        
+}

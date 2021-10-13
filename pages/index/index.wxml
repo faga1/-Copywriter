@@ -1,0 +1,71 @@
+<view class="mask {{ismask===true?'':'hide_select'}}" bindtap="handleHideMask" catchtouchmove="move"></view>
+<view class="nav {{isSelected===true?'blur':''}}">
+    <view class="nav_list" wx:for="{{nav_list}}" wx:key="id" bindtap="handleclassify" data-index="{{index}}">{{item.name}}<image mode="widthFix" src="../../icons/menu_icon_more_nor@2x.png" /></view>
+    <view class='shaixuan' bindtap="handleSelect">筛选<image mode="widthFix" src="../../icons/filter_icon_filter_default@2x.png" /></view>
+</view>
+<view class="classify_list" style="left:{{left}}" >
+    <view class="classify_item" wx:for="{{nav_list}}" wx:key="id" wx:for-item="item1" wx:for-index="index1" >
+        <view class="item_list  {{item1.isclassify?'':'hide_select'}}" >
+            <view class="label_item {{item2.isactive?'active':''}}"
+            wx:for="{{item1.list}}" 
+            wx:key="id"
+            wx:for-item="item2"
+            wx:for-index="index2"
+            catchtouchmove='move'
+            bindtap="handleClassifyItem"
+            data-index1="{{index1}}"
+            data-index2="{{index2}}">
+                {{item2.name}}
+            </view>
+        </view>
+    </view>
+</view>
+<view class="seclect {{isSelected===true?'':'hide_select'}}" catchtouchmove="move" >
+    <view class="show">
+        <view class="show_title">筛选</view>
+        <view class="tags_wrap">
+            <view class="tags_text"><image mode="widthFix" src="../../icons/filter_icon_tagtitle_default@2x.png" />Tags</view>
+                <view class="tags_item " wx:for="{{tags_list}}" wx:key="id" catchtap="handleTagSelect" data-index="{{index}}" wx:if='{{index<6}}'>
+                    <view class="item_inner {{item.selected?'selected_tag':'unselected_tag'}}">{{item.name}}</view>
+                </view>
+        </view>
+        <view class="indef_tags">
+            <view class="tags_text"><image mode="widthFix" src="../../icons/filter_icon_tagtitle_default@2x.png" />Tags</view>
+                <view class="tags_item " wx:for="{{tags_list}}" wx:key="id" bindtap="handleTagSelect" data-index="{{index}}" wx:if='{{index>=6}}'>
+                    <view class="item_inner {{item.selected?'selected_tag':'unselected_tag'}}">{{item.name}}</view>
+                </view>
+        </view>
+        <view class="tags_bottom">
+            <view class="tags_tools">
+                <view class="resetting" bindtap="handleResetting">重置</view>
+                <view class="confirm" bindtap="handleConfirm">确定</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="return_top {{isSelected===true?'blur':''}}" bindtap="handleReturnTop">
+    <image src="../../icons/content_icon_float_backToTop@2x.png" mode="widthFix" />
+</view>
+<view class="content {{isSelected===true?'blur':''}}">
+    <view class="content_item " wx:for="{{sentence_list}}" wx:key="id">
+        <view class="item_content ">
+            <view class="item_image">
+                <image src="{{item.picture}}" mode="scaleToFill" />
+                <view class='item_text'>{{item.sentence}}</view>
+                <view class="text_from"><text>——{{item.sentence_from}}</text></view>
+            </view>
+            <view class='item_label' >
+                <text class="label" wx:for="{{item.tags}}" wx:key="*this" wx:for-item="item1" wx:if="{{item1!==null}}"> {{item1}}</text>
+            </view>
+        </view>
+        <view class="item_bottom">
+            <view class="item_tools">
+                <view class="tool copy_sentencework" bindtap="copy_sentence" data-index="{{index}}"><image mode="widthFix" src="../../icons/card_icon_copy_default@2x.png" /><view class='tool_text'>复制文案</view></view>
+                <view class="tool copy_image" bindtap="save" data-index="{{index}}"><image mode="widthFix" src="../../icons/card_icon_cpypic_default@2x.png" /><view class='tool_text'>复制图片</view></view>
+                <view class="tool collect" bindtap="collect" data-index="{{index}}"><image mode="widthFix" src="{{item.iscollected?'../../icons/card_icon_collect_sel@2x.png':'../../icons/card_icon_collect_nor@2x.png'}}" />
+                    <view class="tool_text {{item.iscollected?'collected':''}}">{{item.iscollected?'已收藏':'收藏'}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

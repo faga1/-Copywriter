@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/collect/collect",
+    "pages/TA/TA",
+    "pages/TA_detail/TA_detail",
+    "pages/feedback/feedback"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f0f4fa",
+    "navigationBarTitleText": "文案馆",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "",
+    "selectedColor": "",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "文案台",
+        "iconPath": "/icons/tab_icon_home_nor@2x.png",
+        "selectedIconPath": "/icons/tab_icon_home_sel@2x.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/icons/tab_icon_my_nor@2x.png",
+        "selectedIconPath": "/icons/tab_icon_my_sel@2x.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

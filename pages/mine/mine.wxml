@@ -1,0 +1,29 @@
+<view class='user_info_wrap'>
+    <image class='background' src="{{userInfo.avatarUrl}}"/>
+    <view class="user_info">
+        <image src="{{userInfo.avatarUrl}}"/>
+        <view class='user_name'>
+            {{userInfo.nickName}}
+        </view>
+    </view>
+</view>
+<view class="mine_content">
+    <view class="mine_item">
+        <image src="../../icons/content_icon_myopt_mylib_default@2x.png"/>
+        <view class='content_text'>我的文案馆</view>
+        <navigator url="/pages/collect/collect"><image class="more_default" src="../../icons/card_icon_more_default.png"/></navigator>
+          
+    </view>
+    <view class="mine_item">
+        <image src="../../icons/content_icon_myopt_libfork_default@2x.png" mode="widthFix"/>
+        <view class='content_text'>TA的文案馆</view>
+        <navigator url="/pages/TA/TA"><image class="more_default" mode="widthFix" src="../../icons/card_icon_more_default.png"/></navigator>
+          
+    </view>
+    <view class="mine_item">
+        <image src="../../icons/content_icon_myopt_feedback_default@2x.png"/>
+        <view class='content_text'>问题反馈</view>
+        <navigator url='/pages/feedback/feedback'><image class="more_default" src="../../icons/card_icon_more_default.png"/></navigator>
+    </view>
+</view>
+  

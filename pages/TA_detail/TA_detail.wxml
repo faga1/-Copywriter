@@ -1,0 +1,33 @@
+
+<view class="return_top " bindtap="handleReturnTop">
+    <image src="../../icons/content_icon_float_backToTop@2x.png" mode="widthFix" />
+</view>
+<view class="share">
+    <image src="../../icons/content_icon_float_share_default@2x.png" mode="widthFix"/>
+    <button open-type="share" plain data-index="{{index}}"></button>
+</view>
+<view class="content ">
+     <view class="content_item " wx:for="{{sentence_list}}" wx:key="id">
+        <view class="item_content ">
+            <view class="item_image">
+                <image src="{{item.picture}}" mode="scaleToFill" />
+                <view class='item_text'>{{item.sentence}}</view>
+                <view class="text_from"><text>——{{item.sentence_from}}</text></view>
+            </view>
+            <view class='item_label' >
+                <text class="label" wx:for="{{item.tags}}" wx:key="*this" wx:for-item="item1"> {{item1}}</text>
+            </view>
+        </view>
+        <view class="item_bottom">
+            <view class="item_tools">
+                <view class="tool copy_sentence" bindtap="copy_sentence" data-index="{{index}}"><image mode="widthFix" src="../../icons/card_icon_copy_default@2x.png" /><view class='tool_text'>复制文案</view></view>
+                <view class="tool copy_image" bindtap="save" data-index="{{index}}"><image mode="widthFix" src="../../icons/card_icon_cpypic_default@2x.png" /><view class='tool_text'>复制图片</view></view>
+                <view class="tool collect" bindtap="collect" data-index="{{index}}"><image mode="widthFix" src="{{item.iscollected?'../../icons/card_icon_collect_sel@2x.png':'../../icons/card_icon_collect_nor@2x.png'}}" />
+                    <view class="tool_text {{item.iscollected?'collected':''}}">{{item.iscollected?'已收藏':'收藏'}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    
+</view>
+

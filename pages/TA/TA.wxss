@@ -1,0 +1,112 @@
+.container {
+  background-color: #f5f5fa;
+  height: 100vh;
+  width: 100vw;
+  padding: 24rpx;
+  z-index: 0;
+  position: fixed;
+}
+.TA_content .TA_item {
+  position: relative;
+  border-radius: 10rpx;
+  background-color: #fff;
+  width: 702rpx;
+  height: 360rpx;
+  margin-bottom: 30rpx;
+}
+.TA_content .TA_item .mask {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 702rpx;
+  height: 360rpx;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+.TA_content .TA_item .tool_detail {
+  border-radius: 10rpx;
+  background-color: #fff;
+  z-index: 100;
+  position: absolute;
+  top: 40rpx;
+  width: 300rpx;
+  height: 300rpx;
+  right: 50rpx;
+}
+.TA_content .TA_item .tool_detail image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 30rpx;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+.TA_content .TA_item .tool_detail text {
+  font-size: 30rpx;
+  color: #323233;
+  line-height: 100rpx;
+}
+.TA_content .TA_item .tool_detail view {
+  height: 100rpx;
+}
+.TA_content .TA_item .tool_detail button {
+  border: 1px solid black;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 100rpx;
+  width: 300rpx;
+  height: 100rpx;
+}
+.TA_content .TA_item .TA_top {
+  position: relative;
+  display: flex;
+}
+.TA_content .TA_item .TA_top .userInfo {
+  display: flex;
+}
+.TA_content .TA_item .TA_top .userInfo .user_left {
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx 20rpx 20rpx 30rpx;
+}
+.TA_content .TA_item .TA_top .userInfo .user_left image {
+  border-radius: 50rpx;
+}
+.TA_content .TA_item .TA_top .userInfo .user_right {
+  margin-top: 44rpx;
+}
+.TA_content .TA_item .TA_top .userInfo .user_right .user_name {
+  color: #323233;
+  font-size: 28rpx;
+}
+.TA_content .TA_item .TA_top .userInfo .user_right .lasttime {
+  color: #949499;
+  font-size: 22rpx;
+}
+.TA_content .TA_item .TA_top .TA_tool {
+  position: absolute;
+  right: 20rpx;
+  top: 40rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.TA_content .TA_item .paperimg {
+  display: flex;
+  padding: 0 20rpx;
+  position: relative;
+  z-index: 10;
+}
+.TA_content .TA_item .paperimg image {
+  border-radius: 10rpx;
+  width: 200rpx;
+  height: 200rpx;
+}
+.TA_content .TA_item .paperimg .img_left {
+  margin-right: 31rpx;
+}
+.hide {
+  display: none;
+}
+.blur {
+  filter: blur(4rpx);
+}

@@ -1,0 +1,54 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "我的",
+          "pathName": "pages/mine/mine",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "登录",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "收藏",
+          "pathName": "pages/collect/collect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "TA",
+          "pathName": "pages/TA/TA",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "TA_detail",
+          "pathName": "pages/TA_detail/TA_detail",
+          "query": "uid=0",
+          "scene": null
+        },
+        {
+          "name": "问题反馈",
+          "pathName": "pages/feedback/feedback",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
